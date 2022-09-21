@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color : yellow;
+        }
+        .container{
+            height : 99vh; /* 100% View hieght 80vh = 80% view height */
+            width : 99vw; /* 100% View width 80vh = 80% view width */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .login-box{
+            height: 47vh;
+            width: 50vh;
+            /*border : 1px solid black;*/
+            display : flex;
+            flex-direction: column;
+        /*	align-content: center; works with flex-wrap */
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: darkgray;
+            border-radius: 10px;
+        }
+        .input-box {
+            height: 40px;
+            width: 240px;
+            font-size: 17px;
+            border-radius: 4px;
+            border-width: 0px;
+            padding-left: 10px;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            font-size: 17px;
+            background-color: slateblue;
+            color: white;
+            border-width: 0px;			
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>	
+            <div class="login-box">
+                <div class="username-box"> <input type="text" class="input-box" placeholder="Username">  </div>
+                <div class="password-box"> <input type="password" class="input-box" placeholder="Password"> </div>
+                <div class="btn-box"><button>Login</button></div>		
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
